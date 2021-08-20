@@ -36,7 +36,7 @@
 		
 ************************************************************/
 
-#define TEST 24
+#define TEST -1
 
 /************************************************************
 概要
@@ -510,6 +510,12 @@ auto_ptr
 		配列を扱うこともできるが、shared_ptr<T[]>でない点に注意。
 		また、 operator[](size_t)は用意されていないのでaccessの仕方にも注意。
 		さらに、 deleterを明示的に指定する必要がある。なお、deleterを明示的に指定する際には、 make_shared<T>(args...)は使えない。
+		
+		■Using custom deleter with shared_ptr and unique_ptr in C++
+			https://medium.com/pranayaggarwal25/custom-deleters-with-shared-ptr-and-unique-ptr-524bb7bd7262
+			
+			contents
+			-	Using custom deleter with shared_ptr
 	******************************/
 #elif(TEST == 17)
 	#include<memory>
